@@ -14,7 +14,10 @@ jobs:
       - uses: actions/checkout@v4
       - uses: pnpm/action-setup@v4
         with:
-          version: 9.1.4
+          run_install: |
+            - recursive: true
+              args: [--frozen-lockfile]
+            - args: [--global, wrangler]
       - name: Deploy
         uses: cloudflare/wrangler-action@v3
         with:
