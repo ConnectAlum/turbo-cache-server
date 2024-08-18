@@ -11,7 +11,7 @@ bucket_name = "turbo-cache"
 
 [[kv_namespaces]]
 binding = "TURBO_CACHE_KV"
-id = "<your-kv-id>"
+id = "52a860948f694a25a74c62fea87c7c21"
 
 # Automatically place your workloads in an optimal location to minimize latency.
 # If you are running back-end logic in a Worker, running it closer to your back-end infrastructure
